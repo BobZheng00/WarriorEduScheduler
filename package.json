@@ -11,9 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/rest": "^2.2.0",
     "axios": "^1.6.7",
     "cheerio": "^1.0.0-rc.12",
     "discord.js": "^14.14.1",
+    "dotenv": "^16.4.1",
     "pg": "^8.11.3"
   },
   "devDependencies": {
