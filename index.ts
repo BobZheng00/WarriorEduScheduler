@@ -32,9 +32,21 @@ client.on('interactionCreate', async interaction => {
 
     const { commandName } = interaction;
 
-    if (commandName === 'ping') {
-        const command = require(`./commands/testCommand.ts`);
-        await command.execute(interaction);
+    switch (commandName) {
+        case 'ping': {
+            const command = require(`./commands/testCommand.ts`);
+            await command.execute(interaction);
+            break;
+        }
+        case 'fetch': {
+            const command = require(`./commands/fetchCommand.ts`);
+            await command.execute(interaction);
+            break;
+        }
+        default: {
+            interaction.reply('Unknown command');
+            break;
+        }
     }
 });
 
@@ -56,16 +68,16 @@ client.on('messageCreate', async (message: Message) => {
     if (message.content === '!fetchdata') {
         const discordId = message.author.id;
         const url = `https://web-calendar.fly.dev/api/userdata/${discordId}`;
-        const dev_url = `http://127.0.0.1:8000//api/userdata/${discordId}`;
+        const dev_url = `http://127.0.0.1:8000/api/userdata/${discordId}`;
         axios.get(dev_url, {
-            headers: { 'Authorization': `Token ${process.env.API_TOKEN}` }
+            headers: { 'Authorization': `Token ${process.env.API_TOKEN_DEV}` }
         })
             .then(response => {
-                console.log(response.data);  // Handle successful response
+                console.log(response.data);
                 message.reply(`Data: ${JSON.stringify(response.data)}`);
             })
             .catch(error => {
-                console.error(error);  // Handle error
+                console.error(error);
                 message.reply('Failed to fetch data.');
             });
     }
