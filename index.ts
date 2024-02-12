@@ -43,6 +43,11 @@ client.on('interactionCreate', async interaction => {
             await command.execute(interaction);
             break;
         }
+        case 'create': {
+            const command = require(`./commands/createCommand.ts`);
+            await command.execute(interaction);
+            break;
+        }
         default: {
             interaction.reply('Unknown command');
             break;
