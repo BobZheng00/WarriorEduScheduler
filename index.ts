@@ -48,6 +48,11 @@ client.on('interactionCreate', async interaction => {
             await command.execute(interaction);
             break;
         }
+        case 'delete': {
+            const command = require(`./commands/deleteCommand.ts`);
+            await command.execute(interaction);
+            break;
+        }
         default: {
             interaction.reply('Unknown command');
             break;
