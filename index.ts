@@ -22,9 +22,27 @@ const client = new Client({
     ]
 });
 
+client.on('guildCreate', async (guild) => {
+    console.log(`Joined new guild: ${guild.name}`);
+    await registerCommands(clientId, guild.id);
+});
+
 client.once('ready', async () => {
     console.log(`Logged in as ${client.user?.tag}!`);
-    await registerCommands(clientId, guildId);
+    const guilds = Array.from(client.guilds.cache.values());
+    for (const guild of guilds) {
+        console.log(`Updating commands for guild: ${guild.name}`);
+        try {
+            await registerCommands(clientId, guild.id);
+        } catch (error) {
+            console.error(`Failed to update commands for guild: ${guild.name}`, error);
+        }
+    }
+});
+
+client.on('guildCreate', async (guild) => {
+    console.log(`Joined new guild: ${guild.name}`);
+    await registerCommands(clientId, guild.id); // Assuming registerCommands is adjusted to handle single guild registration
 });
 
 client.on('interactionCreate', async interaction => {
