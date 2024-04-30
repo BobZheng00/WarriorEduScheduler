@@ -1,7 +1,7 @@
 import { Client, Message, GatewayIntentBits } from 'discord.js';
 import axios from 'axios';
 import { registerCommands } from './utils/registerCommands';
-import * as cheerio from 'cheerio';
+
 import * as fs from "fs";
 
 require('dotenv').config();
@@ -42,7 +42,7 @@ client.once('ready', async () => {
 
 client.on('guildCreate', async (guild) => {
     console.log(`Joined new guild: ${guild.name}`);
-    await registerCommands(clientId, guild.id); // Assuming registerCommands is adjusted to handle single guild registration
+    await registerCommands(clientId, guild.id);
 });
 
 client.on('interactionCreate', async interaction => {
@@ -68,6 +68,11 @@ client.on('interactionCreate', async interaction => {
         }
         case 'delete': {
             const command = require(`./commands/deleteCommand.ts`);
+            await command.execute(interaction);
+            break;
+        }
+        case 'prereq': {
+            const command = require(`./commands/prereqCommand.ts`);
             await command.execute(interaction);
             break;
         }

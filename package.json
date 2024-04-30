@@ -16,7 +16,8 @@
     "cheerio": "^1.0.0-rc.12",
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.1",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "puppeteer": "^22.7.1"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
