@@ -2,8 +2,6 @@ import { Client, Message, GatewayIntentBits } from 'discord.js';
 import axios from 'axios';
 import { registerCommands } from './utils/registerCommands';
 
-import * as fs from "fs";
-
 require('dotenv').config();
 
 const clientId = process.env.CLIENT_ID;
@@ -71,8 +69,8 @@ client.on('interactionCreate', async interaction => {
             await command.execute(interaction);
             break;
         }
-        case 'prereq': {
-            const command = require(`./commands/prereqCommand.ts`);
+        case 'courserequirements': {
+            const command = require(`./commands/courserequirementsCommand.ts`);
             await command.execute(interaction);
             break;
         }
@@ -100,7 +98,7 @@ client.on('messageCreate', async (message: Message) => {
 
     if (message.content === '!fetchdata') {
         const discordId = message.author.id;
-        const url = `https://web-calendar.fly.dev/api/userdata/${discordId}`;
+        // const url = `https://web-calendar.fly.dev/api/userdata/${discordId}`;
         const dev_url = `http://127.0.0.1:8000/api/userdata/${discordId}`;
         axios.get(dev_url, {
             headers: { 'Authorization': `Token ${process.env.API_TOKEN_DEV}` }
