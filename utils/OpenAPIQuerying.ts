@@ -12,8 +12,7 @@ async function fetchCourseData(termCode: string, subjectCode: string, courseCode
     });
 
     if (!response.ok) {
-        console.error('Failed to fetch course data');
-        return {};
+        return null;
     }
 
     const data = await response.json();
@@ -21,7 +20,7 @@ async function fetchCourseData(termCode: string, subjectCode: string, courseCode
 }
 
 export async function parseCourseRequirements(termCode: string, subjectCode: string, courseCode: string) {
-    let prereq = "Invalid course", coreq = "Invalid course", antireq = "Invalid course";
+    let prereq = null, coreq = null, antireq = null;
     const courseData = await fetchCourseData(termCode, subjectCode, courseCode);
     if (!courseData) {
         return { prereq, coreq, antireq };
@@ -62,4 +61,13 @@ export async function parseCourseRequirements(termCode: string, subjectCode: str
     }
 
     return { prereq, coreq, antireq };
+}
+
+export async function parseCourseDescription(termCode: string, subjectCode: string, courseCode: string) {
+    const courseData = await fetchCourseData(termCode, subjectCode, courseCode);
+    if (!courseData) {
+        return "Invalid course";
+    }
+
+    return courseData["description"];
 }

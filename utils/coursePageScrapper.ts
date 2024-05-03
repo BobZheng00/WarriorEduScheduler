@@ -32,3 +32,12 @@ export function extractTextFromHTML(html: string) {
     const textContent = $('body').text();
     return textContent.replace(/\s+/g, ' ').trim();
 }
+
+export function scrapeCourseCode(courseCode: string) {
+    const courseMatch = courseCode.match(/^([A-Za-z]+)(\d{3,4}[A-Za-z]?)$/);
+    if (!courseMatch) {
+        return {subjectCode: null, courseNumber: null};
+    } else {
+        return {subjectCode: courseMatch[1], courseNumber: courseMatch[2]};
+    }
+}
