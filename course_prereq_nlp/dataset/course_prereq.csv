@@ -1,0 +1,380 @@
+input,output
+"CS 479 prerequisites: One of CS 335, CS 370, CS 371/AMATH 242; and STAT 206 with at least 60% or STAT 230 or STAT 240","{
+  ""course_id"": ""CS 479"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [
+        ""CS 335"",
+        ""CS 370"",
+        {
+          ""one_of"": [""CS 371"", ""AMATH 242""]
+        }
+      ]
+    },
+    {
+      ""one_of"": [
+        {
+          ""course"": ""STAT 206"",
+          ""minimum_grade"": 60
+        },
+        ""STAT 230"",
+        ""STAT 240""
+      ]
+    }
+  ],
+  ""restrictions"": []
+}
+"
+"CS 484 prerequisites: (One of AMATH 242/CS 371, CS 370, MATH 235, MATH 245) and (One of STAT 206, STAT 230 or 240); Computer Science students only","{
+  ""course_id"": ""CS 484"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [
+        {
+          ""one_of"": [""AMATH 242"", ""CS 371""]
+        },
+        ""CS 370"",
+        ""MATH 235"",
+        ""MATH 245""
+      ]
+    },
+    {
+      ""one_of"": [
+        ""STAT 206"",
+        ""STAT 230"",
+        ""STAT 240""
+      ]
+    }
+  ],
+  ""restrictions"": [""Computer Science students only""]
+}
+"
+"CS 486 prerequisites:
+CS 341; Computer Science and BMath (Data Science) students only.","{
+  ""course_id"": ""CS 486"",
+  ""prerequisites"": [
+    ""CS 341""
+  ],
+  ""restrictions"": [
+    ""Computer Science and BMath (Data Science) students only""
+  ]
+}"
+"CS 458 prerequisites:
+CS 350 or SE 350. Computer Science students only.","{
+  ""course_id"": ""CS 458"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [""CS 350"", ""SE 350""]
+    }
+  ],
+  ""restrictions"": [""Computer Science students only""]
+}"
+"CS 456 prerequisites:
+CS 350 or SE 350; Computer Science students only.","{
+  ""course_id"": ""CS 456"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [""CS 350"", ""SE 350""]
+    }
+  ],
+  ""restrictions"": [""Computer Science students only""]
+}
+"
+"CS 488 prerequisites:
+CS 341 and (CS 350 or SE 350) and (CS 370 or CS 371); Computer Science students only","{
+  ""course_id"": ""CS 488"",
+  ""prerequisites"": [
+    ""CS 341"",
+    {
+      ""one_of"": [""CS 350"", ""SE 350""]
+    },
+    {
+      ""one_of"": [""CS 370"", ""CS 371""]
+    }
+  ],
+  ""restrictions"": [""Computer Science students only""]
+}"
+"CS 466 prerequisites:
+CS 341; Computer Science students only","{
+  ""course_id"": ""CS 466"",
+  ""prerequisites"": [
+    ""CS 341""
+  ],
+  ""restrictions"": [""Computer Science students only""]
+}"
+"CS 492 prerequisites:
+CS 240/CS 240E; Computer Science students only","{
+  ""course_id"": ""CS 492"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [""CS 240"", ""CS 240E""]
+    }
+  ],
+  ""restrictions"": [""Computer Science students only""]
+}"
+"CS 451 prerequisites:
+CS 341, CS 348 and (CS 350 or SE 350); Computer Science and BMath (Data Science) students only","{
+  ""course_id"": ""CS 451"",
+  ""prerequisites"": [
+    ""CS 341"",
+    ""CS 348"",
+    {
+      ""one_of"": [""CS 350"", ""SE 350""]
+    }
+  ],
+  ""restrictions"": [""Computer Science and BMath (Data Science) students only""]
+}"
+"ECON 290 prerequisites:
+ECON101 or ECON100/COMM103;ECON211 or one of MATH128,138,148; ECON221 or one of ARTS280,ENVS278,KIN222,232,PSCI214/314,PSYCH292, REC371, SDS250R, SMF230, SOC/LS280,STAT202, 206,211,220,230,240, SWREN250R; or Math/FARM students","{
+  ""course_id"": ""ECON 290"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [
+        ""Math/FARM students"",
+        {
+          ""all_of"": [
+            {
+              ""one_of"": [""ECON101"", {""one_of"": [""ECON100"", ""COMM103""]}]
+            },
+            {
+              ""one_of"": [""ECON211"", ""MATH128"", ""MATH138"", ""MATH148""]
+            },
+            {
+              ""one_of"": [
+                ""ECON221"",
+                ""ARTS280"",
+                ""ENVS278"",
+                ""KIN222"",
+                ""KIN232"",
+                ""PSCI214"",
+                ""PSCI314"",
+                ""PSYCH292"",
+                ""REC371"",
+                ""SDS250R"",
+                ""SMF230"",
+                {""one_of"": [""SOC280"", ""LS280""]},
+                ""STAT202"",
+                ""STAT206"",
+                ""STAT211"",
+                ""STAT220"",
+                ""STAT230"",
+                ""STAT240"",
+                ""SWREN250R""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  ""restrictions"": []
+}
+"
+"AMATH 350 prerequisites:
+(One of MATH106, 136, 146), 237 or 247, STAT 230or240 &(one of AFM 272/ACTSC291,ACTSC371,372,ECON371,BUS393W);Lev at least 3A;Not open to GenMath stdts.","{
+  ""course_id"": ""AMATH 350"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [""MATH 106"", ""MATH 136"", ""MATH 146""]
+    },
+    {
+      ""one_of"": [""MATH 237"", ""MATH 247""]
+    },
+    {
+      ""one_of"": [""STAT 230"", ""STAT 240""]
+    },
+    {
+      ""one_of"": [""AFM 272"", ""ACTSC 291"", ""ACTSC 371"", ""ACTSC 372"", ""ECON 371"", ""BUS 393W""]
+    }
+  ],
+  ""restrictions"": [
+    {
+      ""level"": ""at least 3A""
+    },
+    {
+      ""not_open_to"": ""GenMath students""
+    }
+  ]
+}
+"
+"STAT 371 prerequisites:
+(MATH 235 or MATH 245) and (STAT 231 with a grade of at least 60% or STAT 241); Bus/Math dbl degree, Math/Bus, Math/FARM, Math/ITM, or Math Optimization - Business Spec students only.","{
+  ""course_id"": ""STAT 371"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [""MATH 235"", ""MATH 245""]
+    },
+    {
+      ""one_of"": [
+        {""course"": ""STAT 231"", ""minimum_grade"": 60},
+        ""STAT 241""
+      ]
+    }
+  ],
+  ""restrictions"": [
+    {
+      ""restricted_to"": [
+        ""Bus/Math double degree"",
+        ""Math/Bus"",
+        ""Math/FARM"",
+        ""Math/ITM"",
+        ""Math Optimization - Business Spec""
+      ]
+    }
+  ]
+}"
+"ACTSC 445 prerequisites:
+(AFM 275/AFM 372/ACTSC 391 or (ACTSC 231, ACTSC 371) or ACTSC 372 or BUS 393W),((STAT 330,STAT 333) or STAT 334); ACTSC, Math/FARM, Math Fin students only.","{
+  ""course_id"": ""ACTSC 445"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [
+        {""one_of"": [
+          ""AFM 275"",
+          ""AFM 372"",
+          ""ACTSC 391"",
+          ]
+        },
+        {
+          ""all_of"": [""ACTSC 231"", ""ACTSC 371""]
+        },
+        ""ACTSC 372"",
+        ""BUS 393W""
+      ]
+    },
+    {
+      ""one_of"": [
+        {""all_of"": [""STAT 330"", ""STAT 333""]},
+        ""STAT 334""
+      ]
+    }
+  ],
+  ""restrictions"": [
+    {
+      ""restricted_to"": [
+        ""ACTSC students"",
+        ""Math/FARM students"",
+        ""Math Fin students""
+      ]
+    }
+  ]
+}"
+"ACTSC 471 prerequisites:
+AFM 275/AFM 372/ACTSC 391 or ACTSC 372; Comp & Financial Management, Actuarial Science, Math/CPA, Math/Financial Analysis & Risk Mgmt Chartered Financial Analyst, or Mathematical Finance.","{
+  ""course_id"": ""ACTSC 471"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [
+        ""ACTSC 372"",
+        {
+          ""one_of"": [
+            ""AFM 275"",
+            ""AFM 372"",
+            ""ACTSC 391""
+          ]
+        }
+      ]
+    }
+  ],
+  ""restrictions"": [
+    {
+      ""restricted_to"": [
+        ""Comp & Financial Management"",
+        ""Actuarial Science"",
+        ""Math/CPA"",
+        ""Math/Financial Analysis & Risk Mgmt Chartered Financial Analyst"",
+        ""Mathematical Finance""
+      ]
+    }
+  ]
+}"
+"ACTSC 231 prerequisites:
+MATH 137 or MATH 147 and (STAT 220 with a grade of at least 70% or a corequisite of STAT 230 or STAT 240); Level at least 2A; Not open to students who have received credit for ACTSC 232.","{
+  ""course_id"": ""ACTSC 231"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [
+        ""MATH 137"",
+        ""MATH 147""
+      ]
+    },
+    {
+      ""one_of"": [
+        {
+          ""course"": ""STAT 220"",
+          ""min_grade"": ""70%""
+        },
+        {
+          ""corequisite"": ""STAT 230""
+        },
+        {
+          ""corequisite"": ""STAT 240""
+        }
+      ]
+    }
+  ],
+  ""restrictions"": [
+    {
+      ""level"": ""2A""
+    },
+    {
+      ""not_open_to"": [
+        ""students who have received credit for ACTSC 232""
+      ]
+    }
+  ]
+}"
+"AMATH 383 prerequisites:
+(One of MATH 106, MATH 114, MATH 115, MATH 136, MATH 146) and (One of AMATH 250, AMATH 251, AMATH 350 or MATH 218, MATH 228) and (One of STAT 202, STAT 206, STAT 211, STAT 220, STAT 230, STAT 231, STAT 241)","{
+  ""course_id"": ""AMATH 383"",
+  ""prerequisites"": [
+    {
+      ""one_of"": [
+        ""MATH 106"",
+        ""MATH 114"",
+        ""MATH 115"",
+        ""MATH 136"",
+        ""MATH 146""
+      ]
+    },
+    {
+      ""one_of"": [
+        ""AMATH 250"",
+        ""AMATH 251"",
+        ""AMATH 350"",
+        {
+          ""one_of"": [
+            ""MATH 218"",
+            ""MATH 228""
+          ]
+        }
+      ]
+    },
+    {
+      ""one_of"": [
+        ""STAT 202"",
+        ""STAT 206"",
+        ""STAT 211"",
+        ""STAT 220"",
+        ""STAT 230"",
+        ""STAT 231"",
+        ""STAT 241""
+      ]
+    }
+  ],
+  ""restrictions"": []
+}
+"
+"CS 245E prerequisites:
+        A grade of 85% or higher in one of CS 136 or 146; Honours Mathematics students only.","{""course_id"": ""CS 245E"", ""prerequisites"": [{""one_of"": [{""course"": ""CS 136"", ""grade"": ""at least 85%""}, {""course"": ""CS 146"", ""grade"": ""at least 85%""}]}], ""restrictions"": [{""restricted_to"": [""Honours Mathematics students""]}]}"
+"CS 330: One of CS 106, 116, 136, 138, 146, or (CS 114 with at least 60%; CS 115 or CS 135); Level at least 2B; Not open to Computer Science students.","{""course_id"": ""CS 330"", ""prerequisites"": [{""one_of"": [""CS 106"", ""CS 116"", ""CS 136"", ""CS 138"", ""CS 146"", {""all_of"": [{""course"": ""CS 114"", ""grade"": ""at least 60%""}, {""one_of"": [""CS 115"", ""CS 135""]}]}]}], ""restrictions"": [{""level"": ""at least 2B""}, {""not_open_to"": ""Computer Science students""}]}"
+"CS 100: Not open to Mathematics,Biomedical,Chemical,Civil,Computer & Electrical,Environmental,Geological,Management,Mechanical,Mechatronics,Nanotechnology & Systems Design Eng students.","{""course_id"": ""CS 100"", ""prerequisites"": [], ""restrictions"": [""Not open to Mathematics, Biomedical, Chemical, Civil, Computer & Electrical, Environmental, Geological, Management, Mechanical, Mechatronics, Nanotechnology & Systems Design Eng students""]}"
+CS 105: Not open to Mathematics students.,"{""course_id"": ""CS 105"", ""prerequisites"": [], ""restrictions"": [""Not open to Mathematics students""]}"
+CS 106: CS 105; Not open to Mathematics students.,"{""course_id"": ""CS 106"", ""prerequisites"": [""CS 105""], ""restrictions"": [""Not open to Mathematics students""]}"
+CS 114: Not open to Faculty of Math students.,"{""course_id"": ""CS 114"", ""prerequisites"": [], ""restrictions"": [""Not open to Faculty of Math students""]}"
+CS 116: CS 115 or 135 or 145.,"{""course_id"": ""CS 116"", ""prerequisites"": [{""one_of"": [""CS 115"", ""CS 135"", ""CS 145""]}], ""restrictions"": []}"
+CS 135: No prerequisites listed,"{""course_id"": ""CS 135"", ""prerequisites"": [], ""restrictions"": []}"
+"CS 338: One of CS 230, 231, 234, 246/246E, 330; or (AFM 341 and (CS 116 or CS 136 or CS 146)); Not open to Computer Science students.","{""course_id"": ""CS 338"", ""prerequisites"": [{""one_of"": [""CS 230"", ""CS 231"", ""CS 234"", {""one_of"": [""CS 246"", ""CS 246E""]}, ""CS 330"", {""all_of"": [""AFM 341"", {""one_of"": [""CS 116"", ""CS 136"", ""CS 146""]}]}]}], ""restrictions"": [""Not open to Computer Science students""]}"
+CS 341: CS 240/240E and (MATH 239 or 249); Computer Science and BMath (Data Science) students only.,"{""course_id"": ""CS 341"", ""prerequisites"": [{""one_of"": [""CS 240"", ""CS 240E""]}, {""one_of"": [""MATH 239"", ""MATH 249""]}], ""restrictions"": [""Computer Science and BMath (Data Science) students only""]}"
+CS 346: CS 246/246E; Computer Science students only,"{""course_id"": ""CS 346"", ""prerequisites"": [{""one_of"": [""CS 246"", ""CS 246E""]}], ""restrictions"": [""Computer Science students only""]}"
+CS 348: Computer Science and BMath (Data Science) students only.,"{""course_id"": ""CS 348"", ""prerequisites"": [], ""restrictions"": [""Computer Science and BMath (Data Science) students only""]}"
